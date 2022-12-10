@@ -1,0 +1,403 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Dec 10 18:48:48 2022
+# Process ID: 14800
+# Current directory: E:/automatic_washing_machine
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9960 E:\automatic_washing_machine\automatic_washing_machine.xpr
+# Log file: E:/automatic_washing_machine/vivado.log
+# Journal file: E:/automatic_washing_machine\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/automatic_washing_machine/automatic_washing_machine.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 813.750 ; gain = 121.121
+update_compile_order -fileset sources_1
+reset_run impl_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 11 00:24:50 2022...
+g_machine.srcs/sources_1/new/washing_machine.v] -no_script -reset -force -quiet
+remove_files  E:/automatic_washing_machine/automatic_washing_machine.srcs/sources_1/new/washing_machine.v
+close [ open E:/automatic_washing_machine/automatic_washing_machine.srcs/sources_1/new/washing_machinek.v w ]
+add_files E:/automatic_washing_machine/automatic_washing_machine.srcs/sources_1/new/washing_machinek.v
+file mkdir E:/automatic_washing_machine/automatic_washing_machine.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/automatic_washing_machine/automatic_washing_machine.srcs/sim_1/new/test.v w ]
+add_files -fileset sim_1 E:/automatic_washing_machine/automatic_washing_machine.srcs/sim_1/new/test.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/automatic_washing_machine/automatic_washing_machine.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto cd9ed781c0444b4f849e4a9cdc656bda --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <automatic_washing_machine> not found while processing module instance <machine1> [E:/automatic_washing_machine/automatic_washing_machine.srcs/sim_1/new/test.v:27]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 874.223 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto cd9ed781c0444b4f849e4a9cdc656bda --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <automatic_washing_machine> not found while processing module instance <machine1> [E:/automatic_washing_machine/automatic_washing_machine.srcs/sim_1/new/test.v:27]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 874.223 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/automatic_washing_machine/automatic_washing_machine.srcs/sources_1/new/washing_machinek.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module washing_machinek
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/automatic_washing_machine/automatic_washing_machine.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto cd9ed781c0444b4f849e4a9cdc656bda --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.washing_machinek
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 11 00:20:57 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 874.223 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '16' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/automatic_washing_machine/automatic_washing_machine.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time=                   0, Clock=0, Reset=1, start=0, door_close=0, filled=0, detergent_added=0, cycle_timeout=0, drained=0, spin_timeout=0, door_lock=x, motor_on=x, fill_valve_on=x, drain_valve_on=x, soap_wash=x, water_wash=x, done=x
+Time=                   5, Clock=1, Reset=0, start=0, door_close=0, filled=0, detergent_added=0, cycle_timeout=0, drained=0, spin_timeout=0, door_lock=0, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=0, water_wash=0, done=0
+Time=                  10, Clock=0, Reset=0, start=1, door_close=1, filled=0, detergent_added=0, cycle_timeout=0, drained=0, spin_timeout=0, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=0, water_wash=0, done=0
+Time=                  15, Clock=1, Reset=0, start=1, door_close=1, filled=0, detergent_added=0, cycle_timeout=0, drained=0, spin_timeout=0, door_lock=1, motor_on=0, fill_valve_on=1, drain_valve_on=0, soap_wash=0, water_wash=0, done=0
+Time=                  20, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=0, cycle_timeout=0, drained=0, spin_timeout=0, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=0, done=0
+Time=                  25, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=0, cycle_timeout=0, drained=0, spin_timeout=0, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=0, done=0
+Time=                  30, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=0, drained=0, spin_timeout=0, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=0, done=0
+Time=                  35, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=0, drained=0, spin_timeout=0, door_lock=1, motor_on=1, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=0, done=0
+Time=                  40, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=0, spin_timeout=0, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=0, done=0
+Time=                  45, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=0, spin_timeout=0, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=1, soap_wash=1, water_wash=0, done=0
+Time=                  50, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=0, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=0, done=0
+Time=                  55, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=0, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                  60, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                  65, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                  70, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                  75, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                  80, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                  85, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                  90, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                  95, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 100, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 105, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 110, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 115, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 120, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 125, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 130, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 135, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 140, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 145, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 150, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 155, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 160, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 165, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 170, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 175, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 180, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 185, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 190, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 195, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 200, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 205, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 210, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 215, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 220, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 225, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 230, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 235, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 240, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 245, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 250, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 255, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 260, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 265, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 270, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 275, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 280, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 285, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 290, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 295, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 300, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 305, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 310, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 315, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 320, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 325, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 330, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 335, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 340, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 345, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 350, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 355, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 360, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 365, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 370, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 375, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 380, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 385, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 390, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 395, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 400, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 405, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 410, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 415, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 420, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 425, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 430, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 435, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 440, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 445, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 450, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 455, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 460, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 465, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 470, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 475, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 480, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 485, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 490, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 495, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 500, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 505, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 510, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 515, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 520, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 525, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 530, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 535, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 540, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 545, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 550, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 555, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 560, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 565, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 570, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 575, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 580, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 585, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 590, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 595, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 600, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 605, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 610, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 615, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 620, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 625, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 630, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 635, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 640, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 645, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 650, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 655, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 660, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 665, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 670, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 675, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 680, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 685, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 690, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 695, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 700, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 705, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 710, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 715, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 720, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 725, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 730, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 735, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 740, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 745, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 750, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 755, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 760, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 765, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 770, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 775, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 780, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 785, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 790, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 795, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 800, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 805, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 810, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 815, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 820, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 825, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 830, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 835, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 840, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 845, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 850, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 855, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 860, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 865, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 870, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 875, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 880, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 885, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 890, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 895, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 900, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 905, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 910, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 915, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 920, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 925, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 930, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 935, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 940, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 945, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 950, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 955, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 960, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 965, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 970, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=1
+Time=                 975, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 980, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 985, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 990, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                 995, Clock=1, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+Time=                1000, Clock=0, Reset=0, start=1, door_close=1, filled=1, detergent_added=1, cycle_timeout=1, drained=1, spin_timeout=1, door_lock=1, motor_on=0, fill_valve_on=0, drain_valve_on=0, soap_wash=1, water_wash=1, done=0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:23 . Memory (MB): peak = 874.223 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/automatic_washing_machine/automatic_washing_machine.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Sun Dec 11 00:21:14 2022] Launched synth_1...
+Run output will be captured here: E:/automatic_washing_machine/automatic_washing_machine.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-3
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1265.504 ; gain = 382.422
+launch_runs impl_1 -jobs 4
+WARNING: [Constraints 18-5210] No constraint will be written out.
+[Sun Dec 11 00:23:29 2022] Launched impl_1...
+Run output will be captured here: E:/automatic_washing_machine/automatic_washing_machine.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+WARNING: [Constraints 18-5210] No constraint will be written out.
+[Sun Dec 11 00:25:04 2022] Launched impl_1...
+Run output will be captured here: E:/automatic_washing_machine/automatic_washing_machine.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 1715.125 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 1715.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_power -name {power_1}
+Command: report_power -name power_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
